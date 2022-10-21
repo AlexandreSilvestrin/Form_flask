@@ -19,7 +19,7 @@
             {% endif %}
         {% endwith %}
     </div>
-    <div class="container">
+    <div class="container" style="width:1000px">
         <form method="POST" action="" class="border p-4 mt-2">
             {{ forms.csrf_token }}
             <div class="row g-2">
@@ -84,6 +84,66 @@
                 {% endfor %}
             </div>
             <hr>
+            <div>
+                <h3>Informe quais atividades são realizadas internamente e quais são terceirizadas:</h3>
+                <div  style="width:500px; text-align:end">
+                    <br>
+                    {{ forms.perg6.label }}:
+                    {% for subfield in forms.perg6 %}
+                        {{ subfield(class="btn-check") }}
+                        {{ subfield.label(class="btn btn-outline-primary") }}
+                    {% endfor %}
+                    <hr>
+                    {{ forms.perg7.label }}:
+                    {% for subfield in forms.perg7 %}
+                        {{ subfield(class="btn-check") }}
+                        {{ subfield.label(class="btn btn-outline-primary") }}
+                    {% endfor %}
+                    <hr>
+                    {{ forms.perg8.label }}:
+                    {% for subfield in forms.perg8 %}
+                        {{ subfield(class="btn-check") }}
+                        {{ subfield.label(class="btn btn-outline-primary") }}
+                    {% endfor %}
+                    <hr>
+                    {{ forms.perg9.label }}:
+                    {% for subfield in forms.perg9 %}
+                        {{ subfield(class="btn-check") }}
+                        {{ subfield.label(class="btn btn-outline-primary") }}
+                    {% endfor %}
+                    <hr>
+                    {{ forms.perg10.label }}:
+                    {% for subfield in forms.perg10 %}
+                        {{ subfield(class="btn-check") }}
+                        {{ subfield.label(class="btn btn-outline-primary") }}
+                    {% endfor %}
+                    <hr>
+                    {{ forms.perg11.label }}:
+                    {% for subfield in forms.perg11 %}
+                        {{ subfield(class="btn-check") }}
+                        {{ subfield.label(class="btn btn-outline-primary") }}
+                    {% endfor %}
+                    <hr>
+                    {{ forms.perg12.label }}:
+                    {% for subfield in forms.perg12 %}
+                        {{ subfield(class="btn-check") }}
+                        {{ subfield.label(class="btn btn-outline-primary") }}
+                    {% endfor %}
+                    <hr>
+                    {{ forms.perg13.label }}:
+                    {% for subfield in forms.perg13 %}
+                        {{ subfield(class="btn-check") }}
+                        {{ subfield.label(class="btn btn-outline-primary") }}
+                    {% endfor %}
+                    <hr>
+                    {{ forms.perg14.label }}:
+                    {% for subfield in forms.perg14 %}
+                        {{ subfield(class="btn-check") }}
+                        {{ subfield.label(class="btn btn-outline-primary") }}
+                    {% endfor %}
+                    <hr>
+                </div>
+            </div>
             <div class="row">
                 {{ forms.btnFinalizar(class="btn btn-primary mt-2") }}
             </div>
