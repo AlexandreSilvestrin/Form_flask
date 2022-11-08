@@ -8,7 +8,6 @@ app.config['SECRET_KEY'] = 'dc9b08d33bd9c8dbf72a933a368352c8'
 def home():
     btnn = btn()
     if btnn.validate_on_submit() and 'btnFormulario' in request.form:
-        print('clicado')
         return redirect(url_for('form'))
     return render_template('home.html', btn=btnn)
 
