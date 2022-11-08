@@ -21,15 +21,6 @@ def criarRelatorio(x):
     resp6 = forms.perg6.data
     perg7 = forms.perg7.description
     resp7 = forms.perg7.data
-    resp8 = forms.perg8.data
-    resp9 = forms.perg9.data
-    resp10 = forms.perg10.data
-    resp11 = forms.perg11.data
-    resp12 = forms.perg12.data
-    resp13 = forms.perg13.data
-    resp14 = forms.perg14.data
-    resp15 = forms.perg15.data
-    resp16 = forms.perg16.data
     if x == 1:
         return [resp1, resp2, resp3, resp4, resp5, resp6, resp7]
     else:
@@ -59,15 +50,6 @@ class formcheck(FlaskForm):
     perg5 = RadioField(txtP5, choices=['Sim', 'Não'], validators=[DataRequired()], description=txtP5)
     perg6 = RadioField(txtP6, choices=['Sim', 'Não'], validators=[DataRequired()], description=txtP6)
     perg7 = RadioField(txtP7, choices=['Sim', 'Não'], validators=[DataRequired()], description=txtP7)
-    perg8 = RadioField('Departamento Pessoal', choices=['Internamente', 'Terceirizada'], validators=[DataRequired()], description='Departamento Pessoal')
-    perg9 = RadioField('Recursos Humanos', choices=['Internamente', 'Terceirizada'], validators=[DataRequired()], description='Recursos Humanos')
-    perg10 = RadioField('Financeiro', choices=['Internamente', 'Terceirizada'], validators=[DataRequired()], description='Financeiro')
-    perg11 = RadioField('Marketing', choices=['Internamente', 'Terceirizada'], validators=[DataRequired()], description='Marketing')
-    perg12 = RadioField('Comercial', choices=['Internamente', 'Terceirizada'], validators=[DataRequired()], description='Comercial')
-    perg13 = RadioField('Administrativo', choices=['Internamente', 'Terceirizada'], validators=[DataRequired()], description='Administrativo')
-    perg14 = RadioField('Jurídico', choices=['Internamente', 'Terceirizada'], validators=[DataRequired()], description='Jurídico')
-    perg15 = RadioField('Compliance', choices=['Internamente', 'Terceirizada'], validators=[DataRequired()], description='Compliance')
-    perg16 = RadioField('Segurança e Monitoramento', choices=['Internamente', 'Terceirizada'], validators=[DataRequired()], description='Segurança e Monitoramento')
     btnFinalizar = SubmitField('Finalizar')
 
 
